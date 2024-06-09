@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/09 07:29:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:49:07 by jhouyet          ###   ########.fr       */
+/*   Created: 2024/06/09 11:20:42 by jhouyet           #+#    #+#             */
+/*   Updated: 2024/06/09 11:47:29 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+#ifndef __CAT_H__
+#define __CAT_H__
+
 #include "Animal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include <iostream>
 
-int	main()
+class Cat : public Animal
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	public:
+		Cat( void );
+		Cat( std::string type );
+		Cat( const Cat& copy );
+		Cat& operator=( const Cat& copy );
+		~Cat( void );
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
+		void makeSound( void ) const;
+};
 
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-	
-	return 0;
-}
+#endif
