@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   WrongCat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/09 07:29:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:55:18 by jhouyet          ###   ########.fr       */
+/*   Created: 2024/06/09 11:20:42 by jhouyet           #+#    #+#             */
+/*   Updated: 2024/06/09 11:47:29 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#pragma once
+#ifndef __WrongCat_H__
+#define __WrongCat_H__
+
 #include "WrongAnimal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
-#include <iostream>
 
-int	main()
+class WrongCat : public WrongAnimal
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	public:
+		WrongCat( void );
+		WrongCat( std::string type );
+		WrongCat( const WrongCat& copy );
+		WrongCat& operator=( const WrongCat& copy );
+		~WrongCat( void );
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
+		void makeSound( void ) const;
+};
 
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-	
-	return 0;
-}
+#endif
