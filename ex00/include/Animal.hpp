@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:28:25 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:07:50 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 11:15:27 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class Animal {
 		void setType( std::string type );
 
 		std::string getType() const;
+
+		void makeSound() const;
 
 	private:
 		std::string _type;

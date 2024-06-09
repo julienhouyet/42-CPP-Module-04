@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:28:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:07:30 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 11:13:01 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,9 @@ void Animal::setType( std::string type )
 std::string Animal::getType() const 
 {
 	return this->_type;
+}
+
+void Animal::makeSound( void ) const
+{
+	std::cout << "Unknow animal sound" << std::endl;
 }
