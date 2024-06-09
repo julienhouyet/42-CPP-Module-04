@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:29:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 12:03:40 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 15:00:56 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,37 +19,21 @@
 
 int	main()
 {
-	/*
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-
-	delete i;
-	delete j;
-	delete meta;
-	*/
-
-	const WrongAnimal* meta = new WrongAnimal();
-	const Animal* j = new Dog();
-	const WrongAnimal* i = new WrongCat();
-
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-
-	delete i;
-	delete j;
-	delete meta;
+	int animalCount = 10;
+	Animal* animals[animalCount];
 	
-	return 0;
+	for (int i = 0; i < (animalCount / 2); ++i) {
+		std::cout << "Dog " << i << " created" << std::endl;
+		animals[i] = new Dog();
+	}
+	
+	for (int i = animalCount / 2; i < animalCount; ++i) {
+		std::cout << "Cat " << i << " created" << std::endl;
+		animals[i] = new Cat();
+	}
+
+	for (int i = animalCount; i >= 0; --i)
+	{
+		delete animals[i];
+	}
 }
