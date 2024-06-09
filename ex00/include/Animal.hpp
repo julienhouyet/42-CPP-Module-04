@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:28:25 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:45:05 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 12:01:51 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Animal {
 		Animal( std::string type );
 		Animal( const Animal& copy );
 		Animal& operator=( const Animal& copy );
-		~Animal( void );
+		virtual ~Animal( void );
 
 		void setType( std::string type );
 

@@ -22,7 +22,7 @@ class WrongAnimal {
 		WrongAnimal( std::string type );
 		WrongAnimal( const WrongAnimal& copy );
 		WrongAnimal& operator=( const WrongAnimal& copy );
-		~WrongAnimal( void );
+		virtual ~WrongAnimal( void );
 
 		void setType( std::string type );
 

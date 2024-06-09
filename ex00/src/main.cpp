@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:29:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:55:18 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 12:01:01 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,10 @@ int	main()
 	i->makeSound();
 	j->makeSound();
 	meta->makeSound();
+
+	delete i;
+	delete j;
+	delete meta;
 	
 	return 0;
 }
