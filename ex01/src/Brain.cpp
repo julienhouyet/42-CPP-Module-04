@@ -6,20 +6,16 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 13:50:24 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 14:03:06 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 14:09:39 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
+#include <iostream>
 
 Brain::Brain( void )
 {
 	std::cout << "Brain default constructor called" << std::endl;
-}
-
-Brain::Brain( std::string ideas ) : _ideas(ideas)
-{
-	std::cout << "Brain constructor called" << std::endl;
 }
 
 Brain::Brain ( const Brain& copy )
@@ -32,7 +28,10 @@ Brain& Brain::operator=( const Brain& copy )
 {
 	std::cout << "Brain copy assignment operator called" << std::endl;
     if (this != &copy) {
-        this->_ideas = copy._ideas;
+		for (int i = 0; i < 100; ++i)
+		{
+			this->_ideas[i] = copy._ideas[i];
+		}
     }
     return *this;
 }
