@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/09 07:28:25 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:45:05 by jhouyet          ###   ########.fr       */
+/*   Created: 2024/06/09 11:20:42 by jhouyet           #+#    #+#             */
+/*   Updated: 2024/06/09 11:45:00 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#ifndef __ANIMAL_H__
-#define __ANIMAL_H__
+#ifndef __DOG_H__
+#define __DOG_H__
 
-#include <string>
+#include "Animal.hpp"
 
-class Animal {
+class Dog : public Animal
+{
 	public:
-		Animal( void );
-		Animal( std::string type );
-		Animal( const Animal& copy );
-		Animal& operator=( const Animal& copy );
-		~Animal( void );
+		Dog( void );
+		Dog( std::string type );
+		Dog( const Dog& copy );
+		Dog& operator=( const Dog& copy );
+		~Dog( void );
 
-		void setType( std::string type );
-
-		std::string getType() const;
-
-		virtual void makeSound() const;
-
-	private:
-		std::string _type;
+		void makeSound( void ) const;
 };
 
 #endif
