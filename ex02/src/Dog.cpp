@@ -6,20 +6,20 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 11:20:44 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 14:50:00 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 15:24:06 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include <iostream>
 
-Dog::Dog( void ) : Animal("Dog")
+Dog::Dog( void ) : AAnimal("Dog")
 {
 	std::cout << "Dog default constructor called" << std::endl;
 	this->_Brain = new Brain;
 }
 
-Dog::Dog( std::string type ) : Animal(type)
+Dog::Dog( std::string type ) : AAnimal(type)
 {
 	std::cout << "Dog constructor called" << std::endl;
 }

@@ -6,7 +6,7 @@
 #    By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/09 07:27:56 by jhouyet           #+#    #+#              #
-#    Updated: 2024/06/09 14:04:22 by jhouyet          ###   ########.fr        #
+#    Updated: 2024/06/09 15:22:50 by jhouyet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC_DIR 	= src
 INC_DIR		= include
 OBJ_DIR 	= obj
 
-SRC 		= 	$(SRC_DIR)/Animal.cpp \
+SRC 		= 	$(SRC_DIR)/AAnimal.cpp \
 				$(SRC_DIR)/Dog.cpp \
 				$(SRC_DIR)/Cat.cpp \
 				$(SRC_DIR)/WrongAnimal.cpp \
