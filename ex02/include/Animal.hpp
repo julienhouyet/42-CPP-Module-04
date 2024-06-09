@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:28:25 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 12:01:51 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/09 15:15:54 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,6 @@
 
 class Animal {
 	public:
-		Animal( void );
-		Animal( std::string type );
-		Animal( const Animal& copy );
-		Animal& operator=( const Animal& copy );
 		virtual ~Animal( void );
 
 		void setType( std::string type );
@@ -30,7 +26,12 @@ class Animal {
 
 		virtual void makeSound() const;
 
-	private:
+	protected:
+		Animal( void );
+		Animal( std::string type );
+		Animal( const Animal& copy );
+		Animal& operator=( const Animal& copy );
+
 		std::string _type;
 };
 
