@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:29:19 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 15:16:31 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/10 16:24:32 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,15 @@ int	main()
 	{
 		delete animals[i];
 	}
+	
+	/*
+    Cat firstCat;
+    Cat copyCat(firstCat);
+    Cat operatorCopyCat;
+    operatorCopyCat = firstCat;
+
+    firstCat.makeSound();
+    copyCat.makeSound();
+    operatorCopyCat.makeSound();
+	*/
 }
