@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 11:20:44 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:48:05 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/10 16:05:13 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 Cat::Cat( void ) : Animal("Cat")
 {
 	std::cout << "Cat default constructor called" << std::endl;
-}
-
-Cat::Cat( std::string type ) : Animal(type)
-{
-	std::cout << "Cat constructor called" << std::endl;
 }
 
 Cat::Cat( const Cat& copy )

@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 11:20:42 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 14:57:17 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/10 16:07:43 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ class Cat : public Animal
 {
 	public:
 		Cat( void );
-		Cat( std::string type );
 		Cat( const Cat& copy );
 		Cat& operator=( const Cat& copy );
 		~Cat( void );

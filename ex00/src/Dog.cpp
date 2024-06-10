@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 11:20:44 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 11:44:57 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/10 16:05:18 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 Dog::Dog( void ) : Animal("Dog")
 {
 	std::cout << "Dog default constructor called" << std::endl;
-}
-
-Dog::Dog( std::string type ) : Animal(type)
-{
-	std::cout << "Dog constructor called" << std::endl;
 }
 
 Dog::Dog( const Dog& copy )
