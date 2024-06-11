@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 07:28:25 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/09 15:23:13 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/11 17:50:12 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class AAnimal {
 
 		std::string getType() const;
 
-		virtual void makeSound() const;
+		virtual void makeSound() const = 0;
 
 	protected:
 		AAnimal( void );

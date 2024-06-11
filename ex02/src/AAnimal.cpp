@@ -52,8 +52,3 @@ std::string AAnimal::getType() const
 {
 	return this->_type;
 }
-
-void AAnimal::makeSound( void ) const
-{
-	std::cout << "Unknow AAnimal sound" << std::endl;
-}
